@@ -1,0 +1,25 @@
+body {
+	font-family: "Arial";
+}
+
+textarea {
+	resize: none;
+	font-family: "Arial";
+}
+
+/* style for button at bottom */
+#buttoncell {
+	text-align: center;
+}
+#generate {
+	font-size: 130%;
+	width: 100%;
+}
+
+/* cooltable style */
+table.cooltable {
+	margin: 1em auto 1em auto;
+}
+table.cooltable td {
+	width: 200px;
+}
