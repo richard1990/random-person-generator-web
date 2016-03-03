@@ -2,7 +2,6 @@
 	/**
 	 * This file generates a random number of children born to a person.
 	 */
-	session_start();
 	$age = "";
 	if (isset($_SESSION["age"])) {
 		$age = $_SESSION["age"];
@@ -19,5 +18,4 @@
 		$children = rand(0, 4);
 	}
 	$_SESSION["children"] = $children;
-	echo $children;
 ?>

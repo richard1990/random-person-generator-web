@@ -2,7 +2,6 @@
 	/**
 	 * This file generates a random hair colour.
 	 */
-	session_start();
 	$hairColourArr = array("Black","Brown","Blond","Red","Grey","White");
 	$hairColour = "";
 	$age = "";
@@ -30,5 +29,4 @@
 		$hairColour = $hairColourArr[rand(0, count($hairColourArr) - 1)];
 	}
 	$_SESSION["hairColour"] = $hairColour;
-	echo $hairColour;
 ?>

@@ -2,7 +2,6 @@
 	/**
 	 * This file randomly generates a person's weight.
 	 */
-	session_start();
 	$age = "";
 	$isMale = True;
 	if (isset($_SESSION["male"]) && isset($_SESSION["age"])) {
@@ -46,5 +45,4 @@
 
 	$totalWeight = $weight . " lbs (" . round($weight/2.2046, 2) . " kg)";
 	$_SESSION["weight"] = $totalWeight;
-	echo $totalWeight;
 ?>

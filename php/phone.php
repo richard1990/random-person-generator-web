@@ -4,7 +4,6 @@
 	 * on their residence. Currently only supports Canadian and American 
 	 * locations.
 	 */
-	session_start();
 	$phone = "";
 	$country = "";
 	$usState = "";
@@ -14,7 +13,7 @@
 	$areaCode = "";
 	
 	/** get session values */
-	if (isset($_SESSION["country"])) {
+	if (isset($_SESSION["country"]) && isset($_SESSION["city"]) && (isset($_SESSION["province"]) || isset($_SESSION["usState"]))) {
 		if ($_SESSION["country"] == "Canada") {
 			$province = $_SESSION["province"];
 		}
@@ -502,5 +501,4 @@
 	/** put the phone number together */
 	$phone = "(" . $areaCode . ") " . $randomPhone;
 	$_SESSION["phone"] = $phone;
-	echo $phone;	
 ?>

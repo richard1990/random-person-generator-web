@@ -2,7 +2,6 @@
 	/**
 	 * This file generates a random birth date.
 	 */
-	session_start();
 	 
 	 /** get values for min/max year */
 	$maxYear = date('Y')- 14;
@@ -36,5 +35,4 @@
 	$_SESSION["monthNum"] = $monthNum;
 	$birthday = $month . " " . $day . ", " . $year;
 	$_SESSION["birthday"] = $birthday;
-	echo $birthday;
 ?>

@@ -2,7 +2,6 @@
 	/**
 	 * This file generates a random female full name.
 	 */
-	session_start();
 	$male = False;
 	$firstName = "";
 	$lastName = "";
@@ -29,5 +28,4 @@
 
 	/** generate full name */
 	$femaleFullName = $firstName ." " . $lastName;
-	echo $femaleFullName;
 ?>

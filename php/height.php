@@ -2,7 +2,6 @@
 	/**
 	 * This file randomly generates a person's height.
 	 */
-	session_start();
 	$age = "";
 	$isMale = True;
 	if (isset($_SESSION["male"]) && isset($_SESSION["age"])) {
@@ -79,5 +78,4 @@
 	$totalcm = $totalFeet * 2.54;
 	$height = $feet . "'" . $inches . "''". " (" . $totalcm . " cm)";
 	$_SESSION["height"] = $height;
-	echo $height;
 ?>

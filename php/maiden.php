@@ -2,7 +2,6 @@
 	/**
 	 * This file generates a maiden name (for females).
 	 */
-	session_start();
 	$neverMarried = False;
 	$isMale = True;
 	$maidenName = "";
@@ -28,5 +27,4 @@
 			$maidenName = $generatedMaidenName;
 		}
 	}
-	echo $maidenName;
 ?>

@@ -2,7 +2,6 @@
 	/**
 	 * This file randomly generates a person's martial status.
 	 */
-	session_start();
 	$martialArr = array("Married", "Divorced", "Single", "Widowed");
 	$neverMarried = False;
 	$martialStatus = "";
@@ -29,5 +28,4 @@
 		$neverMarried = True;
 	}
 	$_SESSION["neverMarried"] = $neverMarried;
-	echo $martialStatus;
 ?>

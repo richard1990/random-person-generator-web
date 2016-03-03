@@ -2,7 +2,6 @@
 	/**
 	 * This file randomly generates a person's occupation.
 	 */
-	session_start();
 	$occupationArr = file('txt_files/occupations.txt');
 	$studentArr = array("College Student", "University Student", "Unemployed", "NEET");
 	$occupation = "";
@@ -24,5 +23,4 @@
 		$occupation = "Retired, former " . trim($occupationArr[rand(0, count($occupationArr) - 1)]);
 	}
 	$_SESSION["occupation"] = $occupation;
-	echo $occupation;
 ?>

@@ -3,7 +3,6 @@
 	 * This file randomly generates a person's residence. Currently
 	 * only supports Canadian and American locations.
 	 */
-	session_start();
 	$countriesArr = array("Canada", "USA");
 	$country = $countriesArr[rand(0, 1)];
 	$city = "";
@@ -74,7 +73,6 @@
 		$_SESSION["city"] = $city;
 		$residence = $city . ", " . $province . ", " . $country;
 		$_SESSION["residence"] = $residence;
-		echo $residence;
 	}
 	/** American person */
 	else {
@@ -297,6 +295,5 @@
 		$_SESSION["city"] = $city;
 		$residence = $city . ", " . $usState . ", " . $country;
 		$_SESSION["residence"] = $residence;
-		echo $residence;
 	}
 ?>

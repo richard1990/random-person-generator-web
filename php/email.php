@@ -4,7 +4,7 @@
 	 * It requires a session to get the first name and last name of the
 	 * person from male_full_name.php or female_full_name.php.
 	 */
-	session_start();
+	
 	$emailArr = array("@outlook.com", "@hotmail.com", "@yahoo.com", "@gmail.com", "@msn.com", "@aol.com");
 	/** e-mails will have up to 5 random numbers included in it */
 	$randomEmailNum = rand(0, 99999);
@@ -17,5 +17,4 @@
 	
 	/* generate email */
 	$email = $firstName . "." . $lastName . $randomEmailNum . $emailArr[rand(0, count($emailArr) - 1)];
-	echo $email;
 ?>

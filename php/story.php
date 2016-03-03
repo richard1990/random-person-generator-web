@@ -3,7 +3,6 @@
 	 * This file generates a story based on all the data that
 	 * was generated.
 	 */
-	session_start();
 	/** lot of variables obtained from session */
 	$firstName = "";
 	$lastName = "";

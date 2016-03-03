@@ -3,7 +3,6 @@
 	 * This file randomly generates a person's birthplace. Currently
 	 * only supports Canadian and American locations.
 	 */
-	session_start();
 	$countriesArr = array("Canada", "USA");
 	$country = $countriesArr[rand(0, 1)];
 	$city = "";
@@ -71,7 +70,6 @@
 		}
 		$birthplace = $city . ", " . $province . ", " . $country;
 		$_SESSION["birthplace"] = $birthplace;
-		echo $birthplace;
 	}
 	/** American person */
 	else {
@@ -291,6 +289,5 @@
 		}
 		$birthplace = $city . ", " . $usState . ", " . $country;
 		$_SESSION["birthplace"] = $birthplace;
-		echo $birthplace;
 	}
 ?>
