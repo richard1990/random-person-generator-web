@@ -51,7 +51,7 @@
 	}
 	echo "You are <b>" . $firstName . " " . $lastName . "</b>";
 	/** check if female and if they married to display maiden name */
-	if (!$isMale and $neverMarried) {
+	if (!$isMale and !$neverMarried) {
 		echo " (n&eacute;e <b>" . $maidenName . "</b>)";
 	}
 	echo ". You were born on " . $birthday . " in " . $birthplace . " and reside in " . $residence . ". "; 

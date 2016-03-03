@@ -99,7 +99,7 @@
 				<td>
 					Weight
 				</td>
-				<td id=\"weight\">" . $weight . "
+				<td id=\"weight\">" . $totalWeight . "
 				</td>
 			</tr>
 			<tr>
