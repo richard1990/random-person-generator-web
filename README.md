@@ -6,3 +6,7 @@ You can generate a random male or female by clicking on the respective button be
 This is just a rough version I've been working on. There is basically no CSS and I plan on fixing that in the future. I also want to incude more data such as SIN and credit card stuff and whatever else I can think of. I also plan on expanding the story and want to make it more creative. 
 
 You can play around with it on my website <a href="http://dev1.richardbarney.ca/random_person_generator/">here</a>.
+
+# Bugs
+
+Note that the first two people generated will probably be bugged (e.g. their age will probably be wrong), this is due to how I handled passing the variables to each PHP file through a session. I do plan on fixing this in the future.
