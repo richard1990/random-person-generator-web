@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<!-- head -->
+	<head>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script src="jquery-2.2.1.min.js"></script>
+		<script src="scripts.js"></script>
+		<title>Random Person Generator</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	</head>
+	<!-- body -->
+	<body>
+		<!-- wrap everything together -->
+		<div id="wrap">
+			<div id="menu">
+				<table>
+					<tr>
+						<td>
+							Click the buttons below to generate a random male or female. When a person is
+							generated, they are also added to a database table at the bottom of the page. 
+							You can then click the red "X" to delete that row, which will automatically 
+							update the table with the remaining rows. You can see the code on my 
+							<a href="http://github.com/richard1990/random-person-generator-web">GitHub</a> page.
+						</td>
+					</tr>
+					<tr>
+						<td id="buttoncell" colspan="2">
+							<button id="generate" onclick=generateMale()>GENERATE MALE</button><br />
+							<button id="generate" onclick=generateFemale()>GENERATE FEMALE</button>
+						</td>
+					</tr>
+				</table>
+			</div>
+			<h2>Randomly Generated Person</h2>
+			<div id="tabledata"></div>
+		</div>
+	</body>
+</html>

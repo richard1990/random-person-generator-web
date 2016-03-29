@@ -1,0 +1,72 @@
+body {
+	font-family: "Arial";
+}
+h2 {
+	text-align: center;
+}
+textarea {
+	resize: none;
+	font-family: "Arial";
+}
+img {
+	display:block;
+	margin-left: auto;
+	margin-right:auto;
+}
+a {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration:underline;
+}
+
+#wrap {
+	width:1000px;
+	margin:0 auto;
+}
+#menu {
+	float:left;
+	width:150px;
+	background:#F9F9F9;
+	border-bottom:none;
+	border-top:none;
+}
+#content {
+	width:1000px;
+	display:table-cell;
+	background:#F9F9F9;
+}
+/* style for button at bottom */
+#buttoncell {
+	text-align: center;
+}
+#generate {
+	font-size: 130%;
+	width: 100%;
+}
+
+/* cooltable style */
+table.cooltable {
+	margin: 1em auto 1em auto;
+	border-collapse: collapse;
+}
+table.cooltable tr:nth-child(even) {
+	background: #F9F9F9;
+}
+table.cooltable td.leftcell {
+	width: 180px;
+}
+table.cooltable td.rightcell {
+	width:400px;
+}
+
+/* dbtable style */
+table.dbtable {
+	display: block;
+	overflow: scroll;
+	overflow: auto;
+	border-collapse: collapse;
+}
+table.dbtable tr:nth-child(even) {
+	background: #F9F9F9;
+}
