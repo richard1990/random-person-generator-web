@@ -1,13 +1,18 @@
 body {
 	font-family: "Arial";
 }
+<<<<<<< HEAD
 h2 {
 	text-align: center;
 }
+=======
+
+>>>>>>> 49d3e11697d2bb815fc2107bc1d49d07e0bef59b
 textarea {
 	resize: none;
 	font-family: "Arial";
 }
+<<<<<<< HEAD
 img {
 	display:block;
 	margin-left: auto;
@@ -36,6 +41,9 @@ a:hover {
 	display:table-cell;
 	background:#F9F9F9;
 }
+=======
+
+>>>>>>> 49d3e11697d2bb815fc2107bc1d49d07e0bef59b
 /* style for button at bottom */
 #buttoncell {
 	text-align: center;
@@ -48,6 +56,7 @@ a:hover {
 /* cooltable style */
 table.cooltable {
 	margin: 1em auto 1em auto;
+<<<<<<< HEAD
 	border-collapse: collapse;
 }
 table.cooltable tr:nth-child(even) {
@@ -69,4 +78,9 @@ table.dbtable {
 }
 table.dbtable tr:nth-child(even) {
 	background: #F9F9F9;
+=======
+}
+table.cooltable td {
+	width: 200px;
+>>>>>>> 49d3e11697d2bb815fc2107bc1d49d07e0bef59b
 }

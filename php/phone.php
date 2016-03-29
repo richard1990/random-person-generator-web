@@ -12,7 +12,11 @@
 	$randomPhone = "";
 	$areaCode = "";
 	
+<<<<<<< HEAD
 	// get necessary session values 
+=======
+	/** get session values */
+>>>>>>> 49d3e11697d2bb815fc2107bc1d49d07e0bef59b
 	if (isset($_SESSION["country"]) && isset($_SESSION["city"]) && (isset($_SESSION["province"]) || isset($_SESSION["usState"]))) {
 		if ($_SESSION["country"] == "Canada") {
 			$province = $_SESSION["province"];
@@ -24,17 +28,29 @@
 		$city = $_SESSION["city"];
 	}
 	
+<<<<<<< HEAD
 	// 7 random numbers for phone number
 	$randomNumArr = array(rand(0,9), rand(0,9), rand(0,9), rand(0,9), rand(0,9), rand(0,9), rand(0,9));
 	for($i = 0; $i < count($randomNumArr); $i++) {
 		$randomPhone .= $randomNumArr[$i];
 		// put a dash in the phone number after 3 numbers
+=======
+	/** 7 random numbers for phone number */
+	$randomNumArr = array(rand(0,9), rand(0,9), rand(0,9), rand(0,9), rand(0,9), rand(0,9), rand(0,9));
+	for($i = 0; $i < count($randomNumArr); $i++) {
+		$randomPhone .= $randomNumArr[$i];
+		/** put a dash in the phone number after 3 numbers */
+>>>>>>> 49d3e11697d2bb815fc2107bc1d49d07e0bef59b
 		if ($i == "2") {
 			$randomPhone .= "-";
 		}
 	}
 	
+<<<<<<< HEAD
 	// Canadian area codes
+=======
+	/** Canadian area codes */
+>>>>>>> 49d3e11697d2bb815fc2107bc1d49d07e0bef59b
 	if ($country == "Canada") {
 		// yukon, nwt, and nunavut
 		if ($city == "Whitehorse" || $city == "Dawson" || $city == "Yellowknife" || $city == "Hay River"
@@ -126,7 +142,11 @@
 			$areaCode = "709";
 		}
 	}
+<<<<<<< HEAD
 	// American area codes
+=======
+	/** American area codes */
+>>>>>>> 49d3e11697d2bb815fc2107bc1d49d07e0bef59b
 	else {
 		// alabama
 		if ($city == "Birmingham") {
@@ -498,6 +518,10 @@
 		}
 	}
 	
+<<<<<<< HEAD
+=======
+	/** put the phone number together */
+>>>>>>> 49d3e11697d2bb815fc2107bc1d49d07e0bef59b
 	$phone = "(" . $areaCode . ") " . $randomPhone;
 	$_SESSION["phone"] = $phone;
 ?>
