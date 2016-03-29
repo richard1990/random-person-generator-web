@@ -11,11 +11,7 @@
 	if (isset($_SESSION["age"])) {
 		$age = $_SESSION["age"];
 	}
-<<<<<<< HEAD
 	// people under 20 do not own a car
-=======
-	/** people under 20 do not own a car */
->>>>>>> 49d3e11697d2bb815fc2107bc1d49d07e0bef59b
 	if ($age < 20) {
 		$car = "N/A";
 	}

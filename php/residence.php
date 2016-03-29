@@ -3,24 +3,15 @@
 	 * This file randomly generates a person's residence. Currently
 	 * only supports Canadian and American locations.
 	 */
-<<<<<<< HEAD
 	 
 	// necessary variables
-=======
->>>>>>> 49d3e11697d2bb815fc2107bc1d49d07e0bef59b
 	$countriesArr = array("Canada", "USA");
 	$country = $countriesArr[rand(0, 1)];
 	$city = "";
 	
-<<<<<<< HEAD
 	// generate random Canadian residence
 	if ($country == "Canada") {
 		// province and city arrays
-=======
-	/** Canadian person */
-	if ($country == "Canada") {
-		/** province arrays */
->>>>>>> 49d3e11697d2bb815fc2107bc1d49d07e0bef59b
 		$provincesArr = array("Yukon", "Northwest Territories", "Nunavut", "British Columbia", "Alberta", "Saskatchewan", "Manitoba", "Ontario", "Quebec", "New Brunswick", "PEI", "Nova Scotia", "Newfoundland and Labrador");
 		$yukonArr = array("Whitehorse", "Dawson");
 		$nwtArr = array("Yellowknife", "Hay River");
@@ -30,18 +21,14 @@
 		$saskArr = array("Saskatoon", "Regina", "Prince Albert", "Moose Jaw", "Yorkton");
 		$manitobaArr = array("Winnipeg", "Brandon", "Steinbach", "Portage la Prairie", "Thompson", "Winkler", "Selkirk", "Dauphin", "Morden");
 		$ontarioArr = array("Toronto", "Ottawa", "Mississauga", "Brampton", "Hamilton", "London", "Markham", "Vaughan", "Kitchener", "Windsor", "Richmond Hill", "Oakville", "Burlington", "Greater Sudbury", "Oshawa", "Barrie", "St. Catharines", "Cambridge", "Kingston", "Whitby", "Guelph", "Ajax", "Thunder Bay", "Chatham-Kent", "Waterloo", "Brantford", "Pickering", "Clarington", "Milton", "Niagra Falls", "Newmarket", "Sault Ste. Marie", "Sarnia", "Caledon", "Halton Hills", "North Bay", "Aurora", "Welland", "Belleville");
-		$quebecArr = array("Montreal", "Quebec City", "Laval", "Gatineau", "Longueuil", "Sherbrooke", "Saguenay", "Lvis", "Trois-Rivières", "Terrebonne", "Repentigny", "Brossard", "Drummondville", "Saint-Jérôme", "Granby", "Blainville", "Shawinigan", "Dollard-des-Ormeaux");
+		$quebecArr = array("Montreal", "Quebec City", "Laval", "Gatineau", "Longueuil", "Sherbrooke", "Saguenay", "Lvis", "Trois-Rivi?res", "Terrebonne", "Repentigny", "Brossard", "Drummondville", "Saint-J?r?me", "Granby", "Blainville", "Shawinigan", "Dollard-des-Ormeaux");
 		$nbArr = array("Saint John", "Moncton", "Fredericton", "Dieppe", "Miramichi", "Edmundston", "Bathurst");
 		$peiArr = array("Charlottetown", "Summerside", "Stratford", "Cornwall");
 		$nsArr = array("Halifax", "Cape Breton");
 		$newfArr = array("St. John's", "Mount Pearl", "Corner Brook");
 		$province = $provincesArr[rand(0, count($provincesArr) - 1)];
 		
-<<<<<<< HEAD
 		// determine city based on province
-=======
-		/** determine city based on province */
->>>>>>> 49d3e11697d2bb815fc2107bc1d49d07e0bef59b
 		switch($province) {
 			case "Yukon":
 				$city = $yukonArr[rand(0, count($yukonArr) - 1)];
@@ -83,7 +70,6 @@
 				$city = $newfArr[rand(0, count($newfArr) - 1)];
 				break;
 		}
-<<<<<<< HEAD
 		$_SESSION["province"] = $province;
 		$residence = $city . ", " . $province . ", " . $country;
 	}
@@ -91,17 +77,6 @@
 	// generate random American residence
 	else {
 		// US state and city arrays
-=======
-		$_SESSION["country"] = $country;
-		$_SESSION["province"] = $province;
-		$_SESSION["city"] = $city;
-		$residence = $city . ", " . $province . ", " . $country;
-		$_SESSION["residence"] = $residence;
-	}
-	/** American person */
-	else {
-		/** province arrays */
->>>>>>> 49d3e11697d2bb815fc2107bc1d49d07e0bef59b
 		$statesArr = array("Alabama", "Alaska", "Arizona", "Arkansas", "California", "Colorado", 
 						"Connecticut", "Delaware", "Florida", "Georgia", "Hawaii", "Idaho", "Illinois", "Indiana",
 						"Iowa", "Kansas", "Kentucky", "Louisiana", "Maine", "Maryland", "Massachusetts",
@@ -162,11 +137,7 @@
 		$wyomingArr = array("Cheyenne", "Casper", "Laramie");
 		$usState = $statesArr[rand(0, count($statesArr) - 1)];
 		
-<<<<<<< HEAD
 		// determine city based on state
-=======
-		/** determine city based on state */
->>>>>>> 49d3e11697d2bb815fc2107bc1d49d07e0bef59b
 		switch($usState) {
 			case "Alabama":
 				$city = $alabamaArr[rand(0, count($alabamaArr) - 1)];
@@ -319,7 +290,6 @@
 				$city = $wyomingArr[rand(0, count($wyomingArr) - 1)];
 				break;
 		}
-<<<<<<< HEAD
 		$_SESSION["usState"] = $usState;
 		$residence = $city . ", " . $usState . ", " . $country;
 	}
@@ -327,12 +297,4 @@
 	$_SESSION["country"] = $country;
 	$_SESSION["city"] = $city;
 	$_SESSION["residence"] = $residence;
-=======
-		$_SESSION["country"] = $country;
-		$_SESSION["usState"] = $usState;
-		$_SESSION["city"] = $city;
-		$residence = $city . ", " . $usState . ", " . $country;
-		$_SESSION["residence"] = $residence;
-	}
->>>>>>> 49d3e11697d2bb815fc2107bc1d49d07e0bef59b
 ?>

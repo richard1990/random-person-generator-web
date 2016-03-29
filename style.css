@@ -1,49 +1,41 @@
 body {
 	font-family: "Arial";
 }
-<<<<<<< HEAD
 h2 {
 	text-align: center;
 }
-=======
-
->>>>>>> 49d3e11697d2bb815fc2107bc1d49d07e0bef59b
 textarea {
 	resize: none;
 	font-family: "Arial";
 }
-<<<<<<< HEAD
 img {
-	display:block;
+	display: block;
 	margin-left: auto;
-	margin-right:auto;
+	margin-right: auto;
 }
 a {
 	text-decoration: none;
 }
 a:hover {
-	text-decoration:underline;
+	text-decoration: underline;
 }
 
 #wrap {
-	width:1000px;
-	margin:0 auto;
+	width: 1000px;
+	margin: 0 auto;
 }
 #menu {
-	float:left;
-	width:150px;
-	background:#F9F9F9;
-	border-bottom:none;
-	border-top:none;
+	float: left;
+	width: 150px;
+	background: #F9F9F9;
+	border-bottom: none;
+	border-top: none;
 }
 #content {
-	width:1000px;
-	display:table-cell;
-	background:#F9F9F9;
+	width: 1000px;
+	display: table-cell;
+	background: #F9F9F9;
 }
-=======
-
->>>>>>> 49d3e11697d2bb815fc2107bc1d49d07e0bef59b
 /* style for button at bottom */
 #buttoncell {
 	text-align: center;
@@ -56,7 +48,6 @@ a:hover {
 /* cooltable style */
 table.cooltable {
 	margin: 1em auto 1em auto;
-<<<<<<< HEAD
 	border-collapse: collapse;
 }
 table.cooltable tr:nth-child(even) {
@@ -66,7 +57,7 @@ table.cooltable td.leftcell {
 	width: 180px;
 }
 table.cooltable td.rightcell {
-	width:400px;
+	width: 400px;
 }
 
 /* dbtable style */
@@ -78,9 +69,4 @@ table.dbtable {
 }
 table.dbtable tr:nth-child(even) {
 	background: #F9F9F9;
-=======
-}
-table.cooltable td {
-	width: 200px;
->>>>>>> 49d3e11697d2bb815fc2107bc1d49d07e0bef59b
 }

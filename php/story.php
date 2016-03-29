@@ -3,12 +3,8 @@
 	 * This file generates a story based on all the data that
 	 * was generated.
 	 */
-<<<<<<< HEAD
 	 
 	// variables required 
-=======
-	/** lot of variables obtained from session */
->>>>>>> 49d3e11697d2bb815fc2107bc1d49d07e0bef59b
 	$firstName = "";
 	$lastName = "";
 	$isMale = "";
@@ -29,23 +25,15 @@
 	$weight = "";
 	$bloodType = "";
 	
-<<<<<<< HEAD
 	// get all session variables
 	if (isset($_SESSION["firstName"]) && isset($_SESSION["lastName"]) && isset($_SESSION["isMale"]) && isset($_SESSION["maidenName"]) && 
-=======
-	if (isset($_SESSION["firstName"]) && isset($_SESSION["lastName"]) && isset($_SESSION["male"]) && isset($_SESSION["maidenName"]) && 
->>>>>>> 49d3e11697d2bb815fc2107bc1d49d07e0bef59b
 		isset($_SESSION["birthday"]) && isset($_SESSION["birthplace"]) && isset($_SESSION["age"]) && isset($_SESSION["favFood"]) &&
 		isset($_SESSION["favColour"]) && isset($_SESSION["neverMarried"]) && isset($_SESSION["mothersMaidenName"]) && isset($_SESSION["children"]) &&
 		isset($_SESSION["occupation"]) && isset($_SESSION["residence"]) && isset($_SESSION["hairColour"]) && isset($_SESSION["eyeColour"]) &&
 		isset($_SESSION["height"]) && isset($_SESSION["weight"]) && isset($_SESSION["bloodType"])) {
 		$firstName = $_SESSION["firstName"];
 		$lastName = $_SESSION["lastName"];
-<<<<<<< HEAD
 		$isMale = $_SESSION["isMale"];
-=======
-		$isMale = $_SESSION["male"];
->>>>>>> 49d3e11697d2bb815fc2107bc1d49d07e0bef59b
 		$maidenName = $_SESSION["maidenName"];
 		$birthday = $_SESSION["birthday"];
 		$birthplace = $_SESSION["birthplace"];
@@ -64,11 +52,7 @@
 		$bloodType = $_SESSION["bloodType"];
 	}
 	echo "You are <b>" . $firstName . " " . $lastName . "</b>";
-<<<<<<< HEAD
 	// check if female and if they married to display maiden name */
-=======
-	/** check if female and if they married to display maiden name */
->>>>>>> 49d3e11697d2bb815fc2107bc1d49d07e0bef59b
 	if (!$isMale and !$neverMarried) {
 		echo " (n&eacute;e <b>" . $maidenName . "</b>)";
 	}
@@ -77,11 +61,7 @@
 	echo "You have " . strtolower($eyeColour) . " eyes and " . strtolower($hairColour) . " hair. ";
 	echo "You are " . $height . " tall and weigh " . $weight . ". ";
 	echo "Your blood type is type " . $bloodType . ". ";
-<<<<<<< HEAD
 	// display occupation pending age
-=======
-	/** display occupation pending age */
->>>>>>> 49d3e11697d2bb815fc2107bc1d49d07e0bef59b
 	if ($age > 22 && $age < 65) {
 		echo "You work as a(n) " . $occupation . ". ";
 	}
